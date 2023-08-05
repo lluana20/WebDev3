@@ -3,12 +3,12 @@
 <head>
     <title>Simulação de Investimento Financeiro</title>
     <style>
-        /* Estilos gerais */
+    
         body {
-            font-family: Georgia, serif; /* Trocar a fonte para Georgia */
+            font-family: Georgia, serif; 
             text-align: center;
-            background-color: #292929; /* Cor de fundo escura */
-            color: #eee; /* Cor do texto */
+            background-color: #292929; 
+            color: #eee; 
             margin: 0;
             padding: 0;
         }
@@ -20,7 +20,7 @@
         }
 
         th, td {
-            border: 1px solid #bf80ff; /* Cor da borda roxa */
+            border: 1px solid #bf80ff; 
             padding: 10px;
             text-align: center;
         }
@@ -28,40 +28,40 @@
         h1 {
             margin-top: 50px;
             font-size: 36px;
-            color: #bf80ff; /* Cor do cabeçalho em roxo */
+            color: #bf80ff; 
         }
 
         fieldset {
-            border: 2px solid #bf80ff; /* Cor da borda roxa */
+            border: 2px solid #bf80ff;
             max-width: 400px;
             margin: 20px auto;
             padding: 20px;
-            border-radius: 10px; /* Cantos arredondados */
+            border-radius: 10px; 
         }
 
         label {
             display: block;
             margin-bottom: 10px;
-            color: #bf80ff; /* Cor dos rótulos em roxo */
+            color: #bf80ff; 
         }
 
         input[type="number"] {
             padding: 6px;
-            border: 1px solid #bf80ff; /* Cor da borda roxa */
-            border-radius: 5px; /* Cantos arredondados */
+            border: 1px solid #bf80ff; 
+            border-radius: 5px; 
         }
 
         input[type="submit"] {
             padding: 10px 20px;
-            background-color: #bf80ff; /* Cor de fundo roxa do botão */
+            background-color: #bf80ff; 
             border: none;
-            color: #fff; /* Cor do texto do botão */
-            border-radius: 5px; /* Cantos arredondados */
+            color: #fff; 
+            border-radius: 5px; 
             cursor: pointer;
         }
 
         input[type="submit"]:hover {
-            background-color: #d9b3ff; /* Cor de fundo roxa mais clara do botão no hover */
+            background-color: #d9b3ff; 
         }
     </style>
 </head>

@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q4-Simulação de Investimento Financeiro</title>
+    <title>Simulação de Investimento Financeiro</title>
     <style>
+        /* Estilos gerais */
+        body {
+            font-family: Georgia, serif; /* Trocar a fonte para Georgia */
+            text-align: center;
+            background-color: #292929; /* Cor de fundo escura */
+            color: #eee; /* Cor do texto */
+            margin: 0;
+            padding: 0;
+        }
       
         table {
             border-collapse: collapse;
@@ -13,9 +20,48 @@
         }
 
         th, td {
-            border: 1px solid black;
-            padding: 6px;
+            border: 1px solid #bf80ff; /* Cor da borda roxa */
+            padding: 10px;
             text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+            font-size: 36px;
+            color: #bf80ff; /* Cor do cabeçalho em roxo */
+        }
+
+        fieldset {
+            border: 2px solid #bf80ff; /* Cor da borda roxa */
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px; /* Cantos arredondados */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #bf80ff; /* Cor dos rótulos em roxo */
+        }
+
+        input[type="number"] {
+            padding: 6px;
+            border: 1px solid #bf80ff; /* Cor da borda roxa */
+            border-radius: 5px; /* Cantos arredondados */
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #bf80ff; /* Cor de fundo roxa do botão */
+            border: none;
+            color: #fff; /* Cor do texto do botão */
+            border-radius: 5px; /* Cantos arredondados */
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #d9b3ff; /* Cor de fundo roxa mais clara do botão no hover */
         }
     </style>
 </head>

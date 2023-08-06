@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
-<style>
-  
+    <style>
         body {
             background-color: #1a1a1a;
-            color: #EDEDED; 
-            font-family: Georgia, serif; 
+            color: #EDEDED;
+            font-family: Georgia, serif;
         }
+
         h1 {
-            color: #D291BC; 
+            color: #D291BC;
         }
 
         .indice {
@@ -70,12 +74,13 @@
         .indice-item.obes3::before {
             background-color: #990000;
         }
-  
+
         .classificacao h2 {
             color: #000000;
         }
     </style>
-  </head>
+</head>
+
 <body>
     <div class="container">
         <h1>Calculadora de IMC</h1>
@@ -95,12 +100,14 @@
             $peso = $_GET['peso'];
 
             if ($altura >= 120 && $peso >= 46) {
-                function calcularIMC($peso, $altura) {
+                function calcularIMC($peso, $altura)
+                {
                     $altura_metros = $altura / 100;
                     return $peso / ($altura_metros * $altura_metros);
                 }
 
-                function obterGrauIMC($imc) {
+                function obterGrauIMC($imc)
+                {
                     if ($imc < 18.5) {
                         return array('Magreza', '#ADD8E6'); // Azul claro
                     } elseif ($imc < 25) {
@@ -121,7 +128,9 @@
                 $classificacao_cor = $classificacao[1];
                 ?>
                 <div class="classificacao" style="background-color: <?php echo $classificacao_cor; ?>">
-                    <h2>Sua classificação de IMC: <?php echo $classificacao_nome; ?></h2>
+                    <h2>Sua classificação de IMC:
+                        <?php echo $classificacao_nome; ?>
+                    </h2>
                 </div>
                 <h1>Tabela de IMC</h1>
                 <table>
@@ -145,7 +154,7 @@
 
                             $cor = obterGrauIMC($imc)[1];
 
-            
+
                             echo "<td title='IMC: " . round($imc, 2) . "' style='background-color: $cor;'></td>";
                         }
                         echo "</tr>";
@@ -153,41 +162,44 @@
                     ?>
                 </table>
 
-    <!-- Índice -->
-        <div class="indice">
-            <ul> 
-                <li class="indice-item magr">
-                    <span>Magreza</span>
-                    <span>(Altura: 120 - 140 cm | Peso: 46 - 56 kg)</span>
-                </li>
-                <li class="indice-item norm">
-                    <span>Normal</span>
-                    <span>(Altura: 140 - 160 cm | Peso: 56 - 68 kg)</span>
-                </li>
-                <li class="indice-item sobr">
-                    <span>Sobrepeso</span>
-                    <span>(Altura: 160 - 180 cm | Peso: 68 - 80 kg)</span>
-                </li>
-                <li class="indice-item obes1">
-                    <span>Obesidade I</span>
-                    <span>(Altura: 180 - 200 cm | Peso: 80 - 92 kg)</span>
-                </li>
-                <li class="indice-item obes2">
-                    <span>Obesidade II</span>
-                    <span>(Altura: 200 - 220 cm | Peso: 92 - 104 kg)</span>
-                </li>
-                <li class="indice-item obes3">
-                    <span>Obesidade III</span>
-                    <span>(Altura: 220 - 250 cm | Peso: 104 - 120 kg)</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-            <?php } else {
+                <!-- Índice -->
+                <div class="indice">
+                    <ul>
+                        <li class="indice-item magr">
+                            <span>Magreza</span>
+                            <span>(Altura: 120 - 140 cm | Peso: 46 - 56 kg)</span>
+                        </li>
+                        <li class="indice-item norm">
+                            <span>Normal</span>
+                            <span>(Altura: 140 - 160 cm | Peso: 56 - 68 kg)</span>
+                        </li>
+                        <li class="indice-item sobr">
+                            <span>Sobrepeso</span>
+                            <span>(Altura: 160 - 180 cm | Peso: 68 - 80 kg)</span>
+                        </li>
+                        <li class="indice-item obes1">
+                            <span>Obesidade I</span>
+                            <span>(Altura: 180 - 200 cm | Peso: 80 - 92 kg)</span>
+                        </li>
+                        <li class="indice-item obes2">
+                            <span>Obesidade II</span>
+                            <span>(Altura: 200 - 220 cm | Peso: 92 - 104 kg)</span>
+                        </li>
+                        <li class="indice-item obes3">
+                            <span>Obesidade III</span>
+                            <span>(Altura: 220 - 250 cm | Peso: 104 - 120 kg)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <?php } else {
                 echo "<p>Por favor, insira um valor válido para a altura (mínimo: 120 cm) e o peso (mínimo: 46 kg).</p>";
             }
         }
         ?>
     </div>
+    <br><br><br><br>
+    <footer> Luana Lima & Maria Theresa &copy; IFNMG 2023 </footer>
 </body>
+
 </html>

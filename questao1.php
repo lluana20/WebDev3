@@ -119,7 +119,7 @@
         }
         ?>
         <br> <br>
-        <a href="#">Página inicial</a>
+        <a href="index.html">Página inicial</a>
     </main>
 <br><br><br><br>
     <footer> Luana Lima & Maria Theresa &copy; IFNMG 2023 </footer>

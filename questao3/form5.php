@@ -27,6 +27,7 @@
         </ol>
         <br>
         <p><a href="questao3.php">Cancelar</a></p>
+        <p><a href="index.html">Pagina Inicial</a></p>
 
     </main>
 </body>

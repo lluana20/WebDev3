@@ -67,6 +67,18 @@
         input[type="submit"]:hover {
             background-color: #d9b3ff;
         }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .purple-link {
+            color: #9370DB;
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 
@@ -135,11 +147,13 @@
     }
     ?>
 
-<br> <br>
-        <a href="index.html">Página inicial</a>
-    </main>
-<br><br><br><br>
-    <footer> Luana Lima & Maria Theresa &copy; IFNMG 2023 </footer>
+    <br> <br>
+    <div>
+        <a href="index.html" class="purple-link">Página inicial</a>
+    </div>
+    <br>
+    <div class="footer-container">
+        <footer class="footer"> Luana Lima & Maria Theresa &copy; IFNMG 2023 </footer>
 </body>
 
 </html>
